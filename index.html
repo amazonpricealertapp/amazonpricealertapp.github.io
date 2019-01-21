@@ -1,7 +1,7 @@
 <h1 id='title'>Hello world!</h1>
 
 <script>
-document.getElementById('title').innerHTML = getMobileOperatingSystem();
+getMobileOperatingSystem();
 
 function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -12,6 +12,7 @@ function getMobileOperatingSystem() {
     }
 
     if (/android/i.test(userAgent)) {
+        window.location.replace('https://play.google.com/store/apps/details?id=andrea.app.it.amazonpricetracker');
         return "Android";
     }
 
